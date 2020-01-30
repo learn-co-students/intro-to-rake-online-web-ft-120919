@@ -1,7 +1,7 @@
 namespace :greeting do 
 desc 'outputs hola to the terminal'
 task :hola do 
-  puts "hola de rake"
+  puts "hola de Rake!"
 end
 
 desc 'outputs hello to the terminal'
@@ -23,8 +23,9 @@ namespace :db do
   task :seed do
     require_relative './db/seeds.rb'
   end
-  desc 'drop into the Pry console'
+end
+
+desc 'drop into the Pry console'
   task :console => :environment do
   Pry.start
-  end
 end
